@@ -16,6 +16,8 @@
 				$views=="correolist" ||	
 				$views=="correosview" ||
 				$views=="backup" ||	
+				$views=="licencias" ||	
+				$views=="licenciaslist" ||	
 				
 
 							

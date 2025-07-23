@@ -62,37 +62,7 @@
 			}
 		}
 
-		/* Controlador para destruir sesion - Controller to destroy session*/
-		public function login_session_destroy_controller() {
-            if (!isset($_POST['token'])) {
-                echo '
-                    <script>
-                        window.location.href = "'.SERVERURL.'login/";
-                    </script>
-                ';
-                exit();
-            }
-        
-            $token = $_POST['token'];
-        
-            if (isset($_SESSION['userToken'], $_SESSION['userName']) &&
-                $_SESSION['userToken'] === $token) {
-        
-                // Cerrar sesión si coincide el token
-                if (session_status() === PHP_SESSION_ACTIVE) {
-                    session_unset();
-                    session_destroy();
-                }
-            }
-        
-            echo '
-                <script>
-                    window.location.href = "'.SERVERURL.'login/";
-                </script>
-            ';
-            exit();
-        }
-
+	
 		/* Controlador para destruir sesion forzada - Controller to destroy session force*/
 		public function login_session_force_destroy_controller(){
 			$token=$_SESSION['userToken'];

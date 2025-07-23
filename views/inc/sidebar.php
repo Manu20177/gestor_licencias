@@ -85,6 +85,24 @@ if (session_status() == PHP_SESSION_NONE) {
 					</li>
 				</ul>
 			</li>
+
+			<li>
+				<a href="#!" class="btn-sideBar-SubMenu">
+					<i class="zmdi zmdi-face zmdi-hc-fw"></i> Licencias <i class="zmdi zmdi-caret-down pull-right"></i>
+				</a>
+				<ul class="list-unstyled full-box">
+					<li>
+						<a href="<?php echo SERVERURL; ?>licencias/">
+							<i class="zmdi zmdi-account-circle zmdi-hc-fw"></i> Nuevo
+						</a>
+					</li>
+					<li>
+						<a href="<?php echo SERVERURL; ?>licenciaslist/">
+							<i class="zmdi zmdi-male-female zmdi-hc-fw"></i> Listado
+						</a>
+					</li>
+				</ul>
+			</li>
 			
 			<li>
 				<a href="#!" class="btn-sideBar-SubMenu">
