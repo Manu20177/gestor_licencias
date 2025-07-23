@@ -18,6 +18,9 @@
 				$views=="backup" ||	
 				$views=="licencias" ||	
 				$views=="licenciaslist" ||	
+				$views=="empresas" ||	
+				$views=="empresaslist" ||	
+				$views=="empresadetalle" ||	
 				
 
 							
